@@ -1,0 +1,129 @@
+
+:root {
+  --primary: #8e2de2;
+  --secondary: #4a00e0;
+  --dark: #0e0e20;
+  --text: #e0e0e0;
+  --accent: #20e3b2;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: var(--text);
+}
+
+.navbar {
+  background: var(--dark);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.navbar nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navbar nav ul li a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.cta-button {
+  background: var(--accent);
+  color: #000;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 15px var(--accent);
+}
+
+.steps, .features, .rewards, .faq {
+  padding: 3rem 2rem;
+  background: #111;
+}
+
+.steps h2, .features h2, .rewards h2, .faq h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.step-grid, .reward-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.step img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.step h3, .reward {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.features ul {
+  list-style: disc;
+  padding-left: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.reward {
+  background: var(--secondary);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.faq-item {
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--dark);
+  color: #aaa;
+}
